@@ -7,9 +7,11 @@ video{
 }
 
 .hero-container{
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    background: url('C:\Programming projects\React\React-site\react_website\public\images\img-home.jpg') center center/cover no-repeat;
     height: 100%;
     width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
