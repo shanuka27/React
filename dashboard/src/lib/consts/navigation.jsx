@@ -1,4 +1,5 @@
-import { HiOutlineAnnotation, HiOutlineCog, HiOutlineCube, HiOutlineDocumentText, HiOutlineQuestionMarkCircle, HiOutlineShoppingCart, HiOutlineUsers, HiOutlineViewGrid } from 'react-icons/hi'
+import { HiOutlineCog, HiOutlineCube,HiOutlineQuestionMarkCircle,HiOutlineViewGrid } from 'react-icons/hi'
+import { RxBarChart } from "react-icons/rx";
 
 export const DASHBOARD_SIDEBAR_LINKS = [
     {
@@ -8,34 +9,16 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         icon: <HiOutlineViewGrid />
     },
     {
-        key: 'products',
-        label: 'Products',
-        path: '/products',
+        key: 'sales',
+        label: 'All Sales',
+        path: '/sales',
+        icon: <RxBarChart />
+    },
+    {
+        key: 'stokes',
+        label: 'Stokes',
+        path: '/stokes',
         icon: <HiOutlineCube />
-    },
-    {
-        key: 'orders',
-        label: 'Orders',
-        path: '/orders',
-        icon: <HiOutlineShoppingCart />
-    },
-    {
-        key: 'customers',
-        label: 'Customers',
-        path: '/customers',
-        icon: <HiOutlineUsers />
-    },
-    {
-        key: 'transactions',
-        label: 'Transactions',
-        path: '/transactions',
-        icon: <HiOutlineDocumentText />
-    },
-    {
-        key: 'messages',
-        label: 'Messages',
-        path: '/messages',
-        icon: <HiOutlineAnnotation />
     }
 ]
 

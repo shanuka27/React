@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
 import Layout from "./components/shared/Layout";
-import Dashboard from "./components/Dashboard";
-import Products from "./components/Products";
+import Sales from "./components/Sales";
+import Stokes from "./components/Stokes";
+import AddQuotation from "./components/AddQuotation";
 
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <Router>
       <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="products" element={<Products/>}/>
+            <Route path="addquotation" element={<AddQuotation />} />
+            <Route path="sales" element={<Sales/>}/>
+            <Route path="stokes" element={<Stokes/>}/>
           </Route>
           <Route>
           <Route path="login" element={<div>this is login page</div>}/>
